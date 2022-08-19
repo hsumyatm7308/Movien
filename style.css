@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Cinzel:wght@600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+head {
+    height: 100vh;
+    position: relative;
+}
+
+
+/* start navbar  */
+
+.leftline {
+    width: 100px;
+    height: 100vh;
+    background: #999;
+    position: relative;
+    position: absolute;
+    z-index: 3;
+    transition: width .5s;
+}
+
+.leftline:hover {
+    width: 170px;
+}
+
+.nav {
+    width: 100%;
+    margin-top: 3px;
+    position: absolute;
+    z-index: 4;
+}
+
+.nav ol {
+    width: 100%;
+    text-align: center;
+    background: beige;
+    margin: 0;
+}
+
+.nav ol li {
+    background: #888;
+    line-height: 50px;
+    border-bottom: 1px solid #000;
+    padding: 0 10px;
+}
+
+.nav ol li:hover {
+    background-color: rgb(55, 56, 56);
+}
+
+.collapse {
+    line-height: 25px;
+    visibility: collapse;
+}
+
+.navhead {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(233, 25, 25);
+    position: absolute;
+    top: 100px;
+}
+
+.leftline span {
+    font-size: 30px;
+    color: #fff;
+    line-height: 100px;
+    margin-left: calc(50% - 15px);
+}
+
+nav .btn {
+    background: none;
+    border: 2px solid firebrick;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 20px;
+    margin-top: 20px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 4;
+}
+
+nav .btn:hover {
+    border: 2px solid blue;
+    color: firebrick;
+}
+
+.srch {
+    width: 50%;
+    position: absolute;
+    left: 200px;
+    z-index: 100;
+}
+
+.srchbox {
+    width: 80%;
+    color: #fff;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(171, 130, 130);
+    margin-top: 80%;
+}
+
+.srchbox:focus {
+    outline: 0;
+}
+
+
+/* end navbar  */
+
+
+/* Start Banner Section  */
+
+.carousel-indecator {
+    /* background-color: aquamarine; */
+    position: absolute;
+    left: 50%;
+    z-index: 10;
+}
+
+.carousel-inners {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+    position: relative;
+}
+
+.carousel-items {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    opacity: 0;
+}
+
+.carousel-items:first-child h1 {
+    animation-name: mytextani;
+    animation-duration: 2s;
+    animation-timing-function: initial;
+    transition: transform .5s;
+}
+
+@keyframes mytextani {
+    from {
+        transform: translate(-15%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7,
+.text8 {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Cinzel', serif;
+    color: #fff;
+    font-size: 7rem;
+    text-shadow: 10px 5px 5px rgb(105, 98, 61);
+    position: absolute;
+    z-index: 50;
+}
+
+.text1 {
+    top: -180px;
+    left: -550px;
+}
+
+.text2 {
+    top: -80px;
+    left: -450px;
+}
+
+.text3 {
+    top: 100px;
+    font-size: 6rem;
+    transform: translate(-270%);
+}
+
+.text4 {
+    top: 190px;
+    font-size: 6rem;
+    transform: translate(-170%);
+}
+
+.text5 {
+    top: 120px;
+    font-size: 6rem;
+    transform: translate(-340%);
+}
+
+.text6 {
+    top: 210px;
+    font-size: 6rem;
+    transform: translate(-220%);
+}
+
+.text7 {
+    top: -120px;
+    font-size: 5rem;
+    transform: translate(-300%);
+}
+
+.text8 {
+    top: -50px;
+    font-size: 5rem;
+    transform: translate(-300%);
+}
+
+.prev,
+.next {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(203, 227, 227);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 6;
+    opacity: .4;
+}
+
+.prev:hover,
+.next:hover {
+    opacity: 1;
+}
+
+.prev {
+    left: 180px;
+    transform: rotate(90deg);
+}
+
+.next {
+    right: 10px;
+    transform: rotate(-90deg);
+}
+
+.carousel-items:nth-child(1) p {
+    width: 400px;
+    color: #bbb;
+    text-indent: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    position: absolute;
+    left: -400px;
+    top: 70px;
+    z-index: 70;
+}
+
+.carousel-items:nth-child(2) p,
+.carousel-items:nth-child(3) p,
+.carousel-items:nth-child(4) p {
+    width: 400px;
+    color: #bbb;
+    text-indent: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    position: absolute;
+    left: -800px;
+    top: 330px;
+    z-index: 70;
+}
+
+.carousel-items:nth-child(4) p {
+    top: 70px;
+}
+
+
+/* End Banner Section  */
+
+
+/* start login  */
+
+.mymodals {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    display: none;
+}
+
+.mymodals h1 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-group {
+    width: 500px;
+    margin: auto;
+    position: relative;
+}
+
+.form-group .form-control {
+    border-radius: 10px;
+    background: none;
+}
+
+.form-group .form-control:focus,
+.form-control:hover {
+    border: 1px solid red;
+}
+
+.form-group i {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.form-group label {
+    color: #fff;
+    font-size: 20px;
+}
+
+.form-group .btn:nth-of-type(1) {
+    background: rgb(173, 68, 68);
+    color: #fff;
+    padding: 5px 20px;
+    position: absolute;
+    right: 120px;
+}
+
+.form-group .btn:nth-of-type(2) {
+    color: #fff;
+    background: rgb(173, 68, 68);
+    padding: 5px 20px;
+    position: absolute;
+    right: 10px;
+}
+
+
+/* end login  */
