@@ -1,0 +1,33 @@
+body {
+    background-color: #ddd;
+}
+
+.srh-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.srh-btn input {
+    width: 20%;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5));
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    padding: 10px 0;
+    transition: width .3s;
+}
+
+.srh-btn input:focus {
+    width: 40%;
+}
+
+.srh-btn i {
+    background-color: rgb(177, 54, 54);
+    font-size: 27px;
+    margin: 5px;
+    padding: 10px 10px;
+}
+
+div video {
+    width: 100%;
+}

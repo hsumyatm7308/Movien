@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    /* height: 100vh; */
+    margin: 0;
+}
+
+nav {
+    position: absolute;
+    z-index: 250;
+}
+
+.navbar-nav .nav-item {
+    padding: 5px 20px;
+}
+
+.dropdown-menu {
+    width: 400px;
+}
+
+.navbar-nav li a {
+    color: #ffff;
+}
+
+.navbar-nav li a:hover {
+    color: #888;
+    border-bottom: 2px solid red;
+}
+
+
+/* start banner  */
+
+.carousel-item .container {
+    height: 100vh;
+}
+
+.banner1 {
+    background: url('../asset/img/banner/Harry_Potter_and_the_Philosopher\'s_Stone_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner2 {
+    background: url('../asset/img/banner/chamber\ ofsecrets.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner3 {
+    background: url('../asset/img/banner/the\ prisoner\ of\ Azkaban.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner4 {
+    background: url('../asset/img/banner/the goblet of fire.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner5 {
+    background: url('../asset/img/banner/the order or the phoenix.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner6 {
+    background: url('../asset/img/banner/half blood prince.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner7 {
+    background: url('../asset/img/banner/death hallow part1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner8 {
+    background: url('../asset/img/banner/deathly hallows part 2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-control-prev span,
+.carousel-control-next span {
+    background: #888;
+    padding: 20px;
+}
+
+.carousel-control-prev span:hover,
+.carousel-control-next span:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #888);
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+    font-size: 40px;
+}
+
+
+/* end banner  */
+
+.betweenspace {
+    color: #ffff;
+    font-weight: lighter;
+    height: 100px;
+    background-color: rgb(201, 103, 103);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* start movie section  */
+
+#movie .row img:hover {
+    transform: scale(1.005);
+}
+
+#movie .row button {
+    background-color: rgb(201, 103, 103);
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    opacity: 0.9;
+}
+
+#movie .row button:hover {
+    opacity: 1;
+    border: 1px solid red;
+}
+
+#movie .row button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* end movie section  */
+
+
+/* start modal box  */
+
+.modal {
+    width: 600px;
+    height: 100vh;
+    background: rgb(115, 105, 105);
+    margin-left: 50%;
+    text-align: justify;
+    transform: translate(-50%);
+}
+
+.cross {
+    color: #fff;
+    margin-left: 85%;
+    border: none;
+    background: rgb(144, 136, 136);
+}
+
+.cross:hover {
+    background: rgb(150, 146, 146);
+    opacity: .5;
+}
+
+.phlosopherstone img {
+    width: 400px;
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transform: translate(-50%);
+}
+
+
+/* end modal box  */
